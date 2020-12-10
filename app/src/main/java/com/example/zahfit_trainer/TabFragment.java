@@ -89,12 +89,13 @@ public class TabFragment extends Fragment {
 ////            define new fragment
 //            fragment = new MainFragment();
 //        }
-        PageMealPlan mealPlan = new PageMealPlan();
-        PageTrainingProgram train = new PageTrainingProgram();
+        ListMealPlan mealPlan = new ListMealPlan();
+        ListProgressFragment progressFragment = new ListProgressFragment();
+        ListChatFragment chatFragment = new ListChatFragment();
         adapter.addFragment(training,tab.get(0));
         adapter.addFragment(mealPlan,tab.get(1));
-        adapter.addFragment(train,tab.get(2));
-        adapter.addFragment(training,tab.get(3));
+        adapter.addFragment(progressFragment,tab.get(2));
+        adapter.addFragment(chatFragment,tab.get(3));
 //        set adapter
         viewPager.setAdapter(adapter);
     }
